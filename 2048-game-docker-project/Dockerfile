@@ -1,5 +1,5 @@
 #stage 1 : Production Stage ( final image)
-FROM ngnix:alpine
+FROM nginx:alpine
 
 #set working directory inside the ngnix
 WORKDIR /usr/share/ngnix/html
