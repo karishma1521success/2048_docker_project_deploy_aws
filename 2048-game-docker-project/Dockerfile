@@ -11,7 +11,7 @@ COPY . .
 EXPOSE 80
 
 # start the Nginix server
-CMD [ "nginx", "g", "daemon off;" ]
+CMD [ "nginx", "-g", "daemon off;" ]
 
 
 
