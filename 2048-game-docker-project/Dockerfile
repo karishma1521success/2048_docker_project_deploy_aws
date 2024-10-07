@@ -1,5 +1,10 @@
 # stage1 : Build stage
-FROM node:18-alpine AS build
+FROM ubuntu:20.4 AS build
+
+# Install node.js and 
+RUN apt-get update && apt-get install -y curl 
+RUN curl -sL https://deb.nodesource.com/setup_18.x | bash - 
+RUN apt-get update && apt-get install -y nodejs npm
 
 # set working directory inside the build container
 WORKDIR /2048-app
