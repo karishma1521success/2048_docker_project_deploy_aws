@@ -1,5 +1,5 @@
 # stage1 : Build stage
-FROM ubuntu:20.4 AS build
+FROM ubuntu:20.04 AS build
 
 # Install node.js and 
 RUN apt-get update && apt-get install -y curl 
